@@ -7,7 +7,7 @@ The application manages a shop inventory of **Mobile phones** and **MP3 players*
 
 ## Author
 
-**Duke C** — Student ID: 1778097223296  
+**MD. GALIB SHIFULLAH** — Registration ID: 221LM2590013  
 Module: CS4001 — Introduction to Object-Oriented Programming
 
 ---
