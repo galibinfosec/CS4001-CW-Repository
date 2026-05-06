@@ -8,7 +8,7 @@ The application manages a shop inventory of **Mobile phones** and **MP3 players*
 ## Author
 
 **MD. GALIB SHIFULLAH** — Registration ID: 221LM2590013 
-email: mds0337@my.londonmet.ac.uk , lm2590013@cityu.ac.cy
+email: mds0337@my.londonmet.ac.uk , lm2590013@cityu.ac.cy -
 Module: CS4001 — Introduction to Object-Oriented Programming
 
 ---
