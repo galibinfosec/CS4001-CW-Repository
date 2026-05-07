@@ -9,7 +9,7 @@ public class MP3 extends Gadget {
         this.availableMemory = availableMemory;
     }
 
-
+    /** Returns the available memory on the MP3 player in MB. */
     public int getAvailableMemory() {
         return availableMemory;
     }
@@ -24,7 +24,7 @@ public class MP3 extends Gadget {
         }
     }
 
-   
+
     public void deleteMusic(int memoryFreed) {
         availableMemory += memoryFreed;
         System.out.println("Music deleted. Available memory: " + availableMemory + " MB.");
