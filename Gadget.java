@@ -6,38 +6,30 @@ public class Gadget {
     private int weight;
     private String size;
 
-    
+   
     public Gadget(String model, double price, int weight, String size) {
-        this.model = model;
-        this.price = price;
+        this.model  = model;
+        this.price  = price;
         this.weight = weight;
-        this.size = size;
+        this.size   = size;
     }
 
-    
-    public String getModel() {
-        return model;
-    }
+    /
+    public String getModel()  { return model;  }
 
     
-    public double getPrice() {
-        return price;
-    }
+    public double getPrice()  { return price;  }
 
     
-    public int getWeight() {
-        return weight;
-    }
+    public int    getWeight() { return weight; }
 
     
-    public String getSize() {
-        return size;
-    }
+    public String getSize()   { return size;   }
 
     
     public void display() {
         System.out.println("Model  : " + model);
-        System.out.println("Price  : £" + String.format("%.2f", price));
+        System.out.println("Price  : \u00a3" + String.format("%.2f", price));
         System.out.println("Weight : " + weight + "g");
         System.out.println("Size   : " + size);
     }
