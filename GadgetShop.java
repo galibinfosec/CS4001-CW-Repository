@@ -30,6 +30,7 @@ public class GadgetShop extends JFrame implements ActionListener {
     private JButton btnAddCredit;
     private JButton btnDownloadMusic;
     private JButton btnDeleteMusic;
+    private JButton btnClearOutput;
 
     public GadgetShop() {
         gadgets = new ArrayList<>();
@@ -136,6 +137,7 @@ public class GadgetShop extends JFrame implements ActionListener {
         btnAddMobile     = createButton("Add Mobile",     new Color(52, 120, 246));
         btnAddMP3        = createButton("Add MP3",        new Color(52, 120, 246));
         btnClear         = createButton("Clear",          new Color(150, 150, 160));
+        btnClearOutput   = createButton("Clear Output",   new Color(200, 80, 60));
         btnDisplayAll    = createButton("Display All",    new Color(34, 160, 100));
         btnMakeCall      = createButton("Make A Call",    new Color(220, 140, 30));
         btnAddCredit     = createButton("Add Credit",     new Color(220, 140, 30));
@@ -150,6 +152,7 @@ public class GadgetShop extends JFrame implements ActionListener {
         panel.add(btnDownloadMusic);
         panel.add(btnDeleteMusic);
         panel.add(btnClear);
+        panel.add(btnClearOutput);
         return panel;
     }
 
@@ -231,6 +234,7 @@ public class GadgetShop extends JFrame implements ActionListener {
         if      (src == btnAddMobile)     addMobile();
         else if (src == btnAddMP3)        addMP3();
         else if (src == btnClear)         clearFields();
+        else if (src == btnClearOutput)   clearOutput();
         else if (src == btnDisplayAll)    displayAll();
         else if (src == btnMakeCall)      makeCall();
         else if (src == btnAddCredit)     addCredit();
@@ -259,6 +263,10 @@ public class GadgetShop extends JFrame implements ActionListener {
         tfSize.setText(""); tfCredit.setText(""); tfMemory.setText("");
         tfPhoneNumber.setText(""); tfDuration.setText("");
         tfDownloadSize.setText(""); tfDisplayNumber.setText("");
+        // Output is preserved — use "Clear Output" button to clear it
+    }
+
+    private void clearOutput() {
         taOutput.setText("");
     }
 
