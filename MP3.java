@@ -3,18 +3,18 @@ public class MP3 extends Gadget {
 
     private int availableMemory;
 
-    
+
     public MP3(String model, double price, int weight, String size, int availableMemory) {
         super(model, price, weight, size);
         this.availableMemory = availableMemory;
     }
 
-    
+
     public int getAvailableMemory() {
         return availableMemory;
     }
 
-    
+
     public void downloadMusic(int memoryRequired) {
         if (memoryRequired <= availableMemory) {
             availableMemory -= memoryRequired;
@@ -24,7 +24,7 @@ public class MP3 extends Gadget {
         }
     }
 
-    
+   
     public void deleteMusic(int memoryFreed) {
         availableMemory += memoryFreed;
         System.out.println("Music deleted. Available memory: " + availableMemory + " MB.");
