@@ -6,7 +6,7 @@ public class Gadget {
     private int weight;
     private String size;
 
-   
+
     public Gadget(String model, double price, int weight, String size) {
         this.model  = model;
         this.price  = price;
@@ -14,19 +14,19 @@ public class Gadget {
         this.size   = size;
     }
 
-    /
+   
     public String getModel()  { return model;  }
 
-    
+
     public double getPrice()  { return price;  }
 
-    
+
     public int    getWeight() { return weight; }
 
-    
+
     public String getSize()   { return size;   }
 
-    
+ 
     public void display() {
         System.out.println("Model  : " + model);
         System.out.println("Price  : \u00a3" + String.format("%.2f", price));
